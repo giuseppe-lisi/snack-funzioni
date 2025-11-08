@@ -23,11 +23,9 @@ function timeBasedGreeting(name, hour) {
     return greeting;
 }
 
-console.log(timeBasedGreeting(name, 24));
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
+console.log(timeBasedGreeting(name, 18));
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
