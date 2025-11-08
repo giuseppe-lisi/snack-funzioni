@@ -5,13 +5,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 // Restituisce solo i nomi che iniziano con l'iniziale passata alla funzione
 function getInitials (namesArray, initial) {
-    let namesInitials = [];
+    let filteredNames = [];
     for (let i = 0; i < namesArray.length; i++) {
         if (namesArray[i][0] === initial) {
-            namesInitials.push(namesArray[i]);
+            filteredNames.push(namesArray[i]);
         }
     }
-    return namesInitials;
+    return filteredNames;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
