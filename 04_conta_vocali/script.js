@@ -5,13 +5,13 @@ const word = 'javascript';
 // Dichiara la funzione qui.
 function getNumOfVowels(str) {
     let vocali = ['a', 'e', 'i', 'o', 'u'];
-    let vowelNum = 0;
+    let vowelCount = 0;
     for (let i = 0; i < str.length; i++) {
         if (vocali.includes(str[i])) {
-            vowelNum++;
+            vowelCount++;
         }
     }
-    return vowelNum;
+    return vowelCount;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
