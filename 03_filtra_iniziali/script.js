@@ -8,7 +8,7 @@ function getInitials (namesArray, initial) {
     let namesInitials = [];
     for (let i = 0; i < namesArray.length; i++) {
         if (namesArray[i][0] === initial) {
-            namesInitials.push(namesArray[i][0]);
+            namesInitials.push(namesArray[i]);
         }
     }
     return namesInitials;
