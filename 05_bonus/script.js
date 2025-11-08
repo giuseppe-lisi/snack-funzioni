@@ -6,9 +6,24 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = 'Mario';
-
+let date = new Date();
 
 // Dichiara la funzione qui.
+function timeBasedGreeting(name, hour) {
+    let greeting = "";
+    if (hour >= 6 && hour <= 13) {
+        greeting = `Buongiorno ${name}`;
+    }
+    if (hour >= 14 && hour <= 17) {
+        greeting = `Buon pomeriggio ${name}`;
+    }
+    if ((hour >= 18 && hour <= 24) || (hour >= 1 && hour <=5)) {
+        greeting = `Buonasera ${name}`;
+    }
+    return greeting;
+}
+
+console.log(timeBasedGreeting(name, 24));
 
 
 // Invoca la funzione qui e stampa il risultato in console
