@@ -7,7 +7,7 @@ const namesInitials = [];
 // Dichiara la funzione qui.
 function getInitials (namesArray) {
     for (let i = 0; i < namesArray.length; i++) {
-        namesInitials.push(names[i][0]);
+        namesInitials.push(namesArray[i][0]);
     }
     return namesInitials;
 }
